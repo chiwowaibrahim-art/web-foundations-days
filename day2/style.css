@@ -1,0 +1,100 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+}
+.header {
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+  top: 0%;
+  padding: 20px 10px;
+  line-height: 1.5;
+  width: 600px;
+}
+.topnav {
+  color: rgb(5, 56, 5);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.home:hover {
+  background-color: red;
+}
+.about:hover {
+  background-color: red;
+}
+.main {
+  width: 600px;
+  justify-content: center;
+}
+.card h3 {
+  margin-top: 0;
+  width: 600px;
+  margin-bottom: 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  display: grid;
+  padding: 10px;
+  background-color: #009879;
+}
+.features-list {
+  list-style-type: disc;
+  background-color: whitesmoke;
+  width: 600px;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid;
+}
+thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  font-weight: bold;
+}
+tbody tr:hover {
+  background-color: green;
+  cursor: pointer;
+}
+.feedback-text {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 14px;
+  margin: 8px;
+  background-color: whitesmoke;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+.button {
+  background-color: #d6eecb;
+  border: none;
+  padding: 5px;
+  border-radius: 9px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.button:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+  transform: 1.5s;
+}
+@media screen and (max-width: 600px) {
+}
