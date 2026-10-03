@@ -85,6 +85,18 @@ tbody tr:hover {
 .email{
   color: #E0E0E0
 }
+.name{
+  color: #E0E0E0
+}
+.name-text {
+  width: 100%;
+  max-width: 350px;
+  padding: 5px 14px;
+  margin: 8px;
+  background-color: whitesmoke;
+  border: 1px solid #2d558a;
+  border-radius: 15px;
+} 
 .feedback-text {
   width: 100%;
   max-width: 350px;
@@ -108,7 +120,7 @@ tbody tr:hover {
   padding: 5px 14px;
   margin: 8px;
   background-color: whitesmoke;
-  border: 1px solid #cccccc;
+  border: 1px solid #2d558a;
   border-radius: 15px;
 }
 .button {
