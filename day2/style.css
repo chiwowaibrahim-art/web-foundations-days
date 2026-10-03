@@ -6,54 +6,59 @@ body {
 }
 .header {
   display: flex;
+  color: black;
   position: sticky;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: whitesmoke;
-  top: 0%;
-  padding: 20px 10px;
-  line-height: 1.5;
-  width: 600px;
+  background-color: white;                                                                                                                                                                
+  padding: 24px 16px;
 }
 .topnav {
   color: rgb(5, 56, 5);
   text-decoration: none;
   font-size: 18px;
+  gap: 16px;
+  display: flex;
+}
+.topnav a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
-.home:hover {
-  background-color: red;
-}
-.about:hover {
-  background-color: red;
-}
 .main {
-  width: 600px;
-  justify-content: center;
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 0 16px;
 }
-.card h3 {
-  margin-top: 0;
-  width: 600px;
-  margin-bottom: 15px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  display: grid;
-  padding: 10px;
-  background-color: #009879;
+
+.section {
+  margin-bottom: 50px;
+  background-color: white;
+  color: black;
+  padding: 24px;
+  border-radius: 20px;
 }
-.features-list {
-  list-style-type: disc;
-  background-color: whitesmoke;
-  width: 600px;
-  color:black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
+
+.features{
+  list-style-type: none;
+  gap: 8px;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  overflow-wrap: anywhere;
 }
 .table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
   margin: 20px auto;
@@ -74,14 +79,37 @@ tbody tr:hover {
   background-color: green;
   cursor: pointer;
 }
+.feedback{
+  color: #E0E0E0
+}
+.email{
+  color: #E0E0E0
+}
 .feedback-text {
   width: 100%;
   max-width: 350px;
-  padding: 10px 14px;
+  padding: 9px 11px;
+  margin: 0;
+  background-color: whitesmoke;
+  border: 1px solid #2d558a;
+  border-radius: 13px;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  font-weight: bold;
+  flex-wrap: wrap;
+} 
+.email-textbox {
+  width: 100%;
+  max-width: 350px;
+  padding: 5px 14px;
   margin: 8px;
   background-color: whitesmoke;
   border: 1px solid #cccccc;
-  border-radius: 4px;
+  border-radius: 15px;
 }
 .button {
   background-color: #d6eecb;
@@ -90,11 +118,21 @@ tbody tr:hover {
   border-radius: 9px;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .button:hover {
   background-color: antiquewhite;
   cursor: pointer;
-  transform: 1.5s;
+  transform: scale(1.05);
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+.footer{
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  padding: 16px;
 }
